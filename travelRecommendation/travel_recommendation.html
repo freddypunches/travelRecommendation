@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelBloom — Explore Dream Destination</title>
+
+  <!-- fonts + icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/XXXX.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="logo-block">
+      <i class="fas fa-plane-departure"></i><span class="brand">TravelBloom</span>
+    </div>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a class="active" href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+
+      <form id="searchForm" class="search" role="search">
+        <input id="q" type="search" placeholder="Enter a destination or keyword">
+        <button type="submit">Search</button>
+        <button id="resetBtn" type="button">Clear</button>
+      </form>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <!-- left column -->
+    <div class="hero-content">
+      <h1><span>EXPLORE</span><br><span>DREAM</span><br><span>DESTINATION</span></h1>
+      <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+      <a class="btn" href="#">Book Now</a>
+    </div>
+
+    <!-- right column for dynamic cards -->
+    <aside class="results-panel">
+      <!-- JS will inject <div id="rec_grid"> here -->
+    </aside>
+
+    <!-- social rail -->
+    <ul class="social">
+      <li><a aria-label="X"        href="#"><i class="fab fa-x-twitter"></i></a></li>
+      <li><a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a aria-label="Instagram"href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a aria-label="YouTube"  href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </section>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
